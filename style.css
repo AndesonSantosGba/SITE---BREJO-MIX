@@ -1,6 +1,8 @@
 :root {
 	--default-green: #1db954;
 	--light-green: #1ed760;
+	--default-red: #d41233;
+	--light-red: #e43d59;
 }
 
 * {
@@ -27,7 +29,7 @@ body {
 }
 
 .btn-primary2 {
-	background: rgba(255, 255, 255, 0);
+	background: var(--default-red);
 	color: white;
 	text-transform: uppercase;
 	padding: 15px 60px;
@@ -41,6 +43,16 @@ body {
 .btn-primary:hover {
 	background: var(--light-green);
 	cursor: pointer;
+}
+
+.btn-primary2:hover {
+	background: var(--light-red);
+	cursor: pointer;
+
+}
+a {
+	text-decoration: none;
+	color: white;
 }
 
 .logo {
@@ -110,6 +122,33 @@ body {
 }
 
 #showcase .showcase-container p {
+	margin: 15px 0;
+	font-size: 1.1rem;
+}
+
+/* Showcase 2*/
+#showcase2 {
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background: url("./img/youtube.avif") center center/cover;
+	background-color: rgba(26, 25, 23, 0.678);
+	background-blend-mode: color;
+}
+
+#showcase2 .showcase-container2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#showcase2 .showcase-container2 h2 {
+	font-size: 5rem;
+}
+
+#showcase2 .showcase-container2 p {
 	margin: 15px 0;
 	font-size: 1.1rem;
 }
